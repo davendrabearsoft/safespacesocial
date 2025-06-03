@@ -1,9 +1,10 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import FeedScreen from '../../src/components/Feed/FeedScreen';
 
-export default function FeedScreen() {
+export default function TabFeedScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Feed</Text>
+      <FeedScreen />
     </View>
   );
 }
@@ -12,11 +13,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f9fafb',
-    padding: 16,
-  },
-  title: {
-    fontFamily: 'Inter-Bold',
-    fontSize: 24,
-    color: '#111827',
   },
 });
